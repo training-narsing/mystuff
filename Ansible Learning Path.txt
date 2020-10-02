@@ -1,0 +1,3 @@
+ansible all -m rpm_key -a 'key=http://content.example.com/rhel7.0/x86_64/dvd/RPM-GPG-KEY-redhat-release state=present' -u admin -b
+
+ansible all -m yum_repository -a 'name=ex407 baseurl=http://content.example.com/rhel7.0/x86_64/dvd enabled=true description="ex407 local repo" gpgcheck=true state=present' -u admin -b
