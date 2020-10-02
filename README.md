@@ -1,1 +1,1 @@
-mystuff
+This is sample file
